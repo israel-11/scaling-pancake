@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "name": "Hauler",
+  "version": "1.0.0",
+  "description": "Hauler - Package transit manager",
+  "main": "index.js",
+  "dependencies": {
+      "express": "~4.0.0",
+      "mongoose": "~3.6.13",
+      "body-parser": "~1.0.1",
+      "apnagent": "1.0.x",
+      "request":"~2.75.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://xandel_434@bitbucket.org/xandel_434/hackpr2016.git"
+  },
+  "keywords": [
+    "hackpr2016"
+  ],
+  "author": "Alexander Guzman",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/xandel_434/hackpr2016#readme"
+}
