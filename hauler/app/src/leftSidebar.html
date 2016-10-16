@@ -1,0 +1,39 @@
+
+<md-sidenav id="sidenav" ng-click="user.toggleList()" md-component-id="left" class="md-whiteframe-z2" >
+    <md-list>
+        <md-card style="margin:0px; margin-bottom:4%; background-image:url('https://cdn-images-2.medium.com/max/1920/1*zH86wd-3URNeM_MoeaBQuQ.jpeg');" md-theme="{{ showDarkTheme ? 'dark-purple' : 'default' }}" md-theme-watch>
+            <md-card-title>
+                <md-card-title-media flex="40">
+                    <md-list-item class="md-media-sm card-media">
+                        <img style="margin-top:50%; width:50px; height:50px;" ng-src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/11760267_920817161315923_884843050114916219_n.jpg?oh=08a06e589adb8278384603f2db476541&oe=58672D68" class="md-avatar" />
+                    </md-list-item>
+                </md-card-title-media>
+                <md-card-title-text style="padding-top:5%" flex="60">
+                    <span class="md-headline">{{name}}</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-actions style="padding-left:4%;" layout="row">
+                <p flex="65">Que es lo que hay?</p>
+            </md-card-actions>
+        </md-card>
+
+        <md-list-item layout="row">
+            <md-button ng-click="route('/home')" layout="row">
+                <p class="fa fa-home fa-lg" flex="20" data-toggle="modal"></p>
+                <p flex="80" data-toggle="modal">Home</p>
+            </md-button>
+        </md-list-item>
+        <md-list-item layout="row">
+            <md-button ng-click="route('/settings')" layout="row">
+                <p class="fa fa-cog fa-lg" flex="20" data-toggle="modal" data-target='#'></p>
+                <p flex="80" data-toggle="modal" data-target='#'>Settings</p>
+            </md-button>
+        </md-list-item>
+        <md-list-item layout="row">
+            <md-button layout="row">
+                <p class="fa fa-power-off fa-lg" flex="20"><img ng-src="" alt=""></p>
+                <p flex="80">Log Out</p>
+            </md-button>
+        </md-list-item>
+    </md-list>
+</md-sidenav>
